@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="formOnSubmit()">
+                    <div>
+                        <label for="productCode">Product Code</label>
+                        <input type="number" name="ProductCode" id="productCode" placeholder="Enter the product code">
+                     </div>
+                     <div>
+                        <label for="product">Product Name</label>
+                        <input type="text" name="product" id="product" placeholder="Enter the product name">
+                     </div>
+                     <div>
+                         <label for="qty">Product Quantity</label>
+                         <input type="number" name="qty" id="qty" placeholder="Enter the quantity">
+                     </div>
+                     <div>
+                         <label for="perPrice">Product price</label>
+                         <input type="number" name="perPrice" id="perPrice" placeholder="Enter Product Price">
+                     </div>
+                     <div>
+                         <input type="submit" value="Submit" />
+                         <input type="reset" value="Reset" />
+                     </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table id="tableList">
+        <thead>
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Product Quantity</th>
+                <th>Product Price</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+        
+    <script src="./script.js"></script>
+</body>
+</html>
